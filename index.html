@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cici Zhu</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img class="profile-pic" src="images/profile.jpg" alt="Photo of Cici Zhu">
+        <h1>Cici Zhu</h1>
+        <p>Data Science and Information Sciences student at UIUC</p>
+        <div class="links">
+            <a href="https://github.com/itz-cici27">GitHub</a>
+            <a href="https://linkedin.com/in/zhu-chen">LinkedIn</a>
+            <a href="mailto:cicizhush@gmail.com">Email</a>
+        </div>
+    </div>
+
+    <div class="tabs">
+    <a href="#about" class="active">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="la-bonne-education.html">IS 310 Assignment</a>
+  </div>
+
+  <div class="card" id="about">
+    <h2>About Me</h2>
+    <p>I am a sophomore studying Data Science and Information Sciences with minors in Computer Science and Business at UIUC, and I expect to graduate in 2028. I grew up between the United States, France, Thailand, and China, which is where a lot of my interest in how information moves across contexts comes from. Most of my work sits somewhere between data engineering and the people who actually have to use the results, as I am very interested in how data can impact decision-making.</p>
+    <p>This site was built for IS 310: Culture as Data, and you can also read my page on a <a href="la-bonne-education.html">1749 engraving about education</a> from the Art Institute of Chicago.</p>
+  </div>
+  
+  <div class="card" id="education">
+    <h2>Education</h2>
+    <h3>University of Illinois Urbana-Champaign</h3>
+    <p class="meta">B.S. Data Science and Information Sciences, minors in Computer Science and Business. Aug. 2025 to May 2028. GPA 4.0</p>
+    <ul>
+      <li>Chancellor's Scholar, James Honors Scholar, Dean's List</li>
+      <li>Coursework: Discrete Structures, Data Science Exploration, Computer Science II, Data Science Ethics and Policy, IS Research and Design Methods, Database Applications and Concepts, Corporate Finance</li>
+    </ul>
+  </div>
+ 
+  <div class="card" id="experience">
+    <h2>Experience</h2>
+ 
+    <h3>Supply Chain Forecasting Data Science Intern</h3>
+    <p class="meta">Michelin North America, Greenville, SC. May 2026 to Aug. 2026</p>
+    <ul>
+      <li>Built Michelin's first production Seasonal-Hybrid ESD anomaly detection pipeline in PySpark and Databricks, covering 110,000+ demand series and 50M+ rows. After a cluster restriction broke statsmodels, I reimplemented the decomposition in NumPy and cut the minimum history requirement from five years to two.</li>
+      <li>Built the companion Power BI dashboard ranking anomalies by severity for Demand Planning, surfacing 600 to 700 high-confidence flags each month with confidence-tiered drill-through.</li>
+      <li>Designed a two-layer DAX statistical check for implausible forecasts, plus a 1 to 9 prioritization framework combining statistical severity and business impact to reduce alert fatigue.</li>
+      <li>Presented a forecast value added analysis comparing manual and AI forecasts, which led to adopted SKU migrations in Blue Yonder.</li>
+    </ul>
+ 
+    <h3>Course Assistant, CS 124</h3>
+    <p class="meta">Siebel School of Computing and Data Science, UIUC. Jan. 2026 to May 2026</p>
+    <ul>
+      <li>Explained programming concepts and debugged code with students in office hours and lab sections.</li>
+    </ul>
+ 
+    <h3>Operations and Business Support Extern</h3>
+    <p class="meta">Yuzhen IoT, Shanghai, China. June 2024</p>
+    <ul>
+      <li>Supported executive-level operations projects in a bilingual, cross-functional environment.</li>
+    </ul>
+  </div>
+ 
+  <div class="card" id="projects">
+    <h2>Projects</h2>
+ 
+    <h3>Joblore, a career intelligence platform</h3>
+    <p class="meta">Jun. 2026 to present</p>
+    <ul>
+        <li>An open-source data product for university students dealing with visa sponsorship uncertainty. I built an automated Pandas pipeline that ingests and cleans 500,000+ Department of Labor disclosure records, then turned the results into interactive Plotly and Streamlit views of compensation thresholds and hiring velocity.</li>
+    </ul>
+ 
+    <h3>Data Dive, movie adaptation analysis</h3>
+    <p class="meta">Illinois Data Science Club. Oct. 2025 to Dec. 2025</p>
+    <ul>
+        <li>Merged IMDb and Goodreads datasets and trained an XGBoost classifier to predict whether a book-to-movie adaptation would succeed, reaching 92.8% accuracy on unseen data.</li>
+    </ul>
+ 
+    <h3>Where2Meet, social coordination platform</h3>
+    <p class="meta">Jan. 2026 to May 2026</p>
+    <ul>
+        <li>A web platform that recommends group meeting spots using midpoint recommendation algorithms and the Google Places API, with filters for activities, restaurants, and atmosphere.
+        </li>
+    </ul>
+  </div>
+ 
+  <div class="card" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Programming:</strong> Python, Java, C++, JavaScript, SQL, DAX</li>
+      <li><strong>Frameworks and libraries:</strong> React, Flutter, Scikit-Learn, Pandas, NumPy, Matplotlib, PySpark, Plotly, Streamlit, XGBoost, Statsmodels</li>
+      <li><strong>Tools and platforms:</strong> Git, VS Code, Android Studio, HTML/CSS, LaTeX, Power BI, Databricks, Figma</li>
+      <li><strong>Languages:</strong> English (fluent), French (fluent), Chinese (fluent), Spanish (conversational)</li>
+    </ul>
+    <p>
+      You can see more of my code on my
+      <a href="https://github.com/itz-cici27">GitHub profile</a>! | (• ◡•)|
+    </p>
+  </div>
+ 
+  <div class="footer">
+    <p>Built with HTML and CSS for IS 310: Culture as Data, Fall 2026.</p>
+  </div>
+ 
+</div>
+ 
+<script>
+  var tabs = document.querySelectorAll(".tabs a");
+ 
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener("click", function () {
+      for (var j = 0; j < tabs.length; j++) {
+        tabs[j].classList.remove("active");
+      }
+      this.classList.add("active");
+    });
+  }
+</script>
+ 
+</body>
+</html>
